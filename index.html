@@ -8,27 +8,33 @@
 
   <body class="body">
     <header class="page-header">
-        <a class="page-header__logo" href="#">logo</a>
+        <div class="page-header__container">
+            <a class="page-header__logo" href="#"><img src="img/logo.svg" class="page-header__logo-icon" alt="Логотип"></a>
 
-        <nav class="page-header__nav">
-            <a class="page-header__nav-link" href="#">Мероприятия</a>
-            <a class="page-header__nav-link" href="#">Блог</a>
-            <a class="page-header__nav-link" href="#">О нас</a>
-            <a class="page-header__nav-link" href="#">Контакты</a>
-        </nav>
-        <a class="page-header__user-link" href="#">Войти</a>
+            <nav class="page-header__nav">
+                <a class="page-header__nav-link" href="#">Мероприятия</a>
+                <a class="page-header__nav-link" href="#">Блог</a>
+                <a class="page-header__nav-link" href="#">О нас</a>
+                <a class="page-header__nav-link" href="#">Контакты</a>
+            </nav>
+                <div class="page-header__right-block">
+                <a class="page-header__user-link" href="#">Войти</a>
+            </div>
+        </div>
+
     </header>
 
     <main class="main">
         <div class="home">
             <header class="main-header home-main__header">
                 <h1>АРТ-ПРОСТРАНСТВО</h1>
-                <img/>
+                <img src="img/LENNI.svg" class="main-header__svg" alt="Lenni">
                 <p class="main-header__paragraph">для людей горящих сердцЕМ и делом
                 место для настоящего
                 </p>
             </header>
 
+            <div class="offers__container">
             <section class="offers home__offers">
                 <h4 class="offers__title">Я хочу:</h4>
                 <div class="offers__btns">
@@ -39,30 +45,147 @@
 
             <section class="about home__about">
                 <h2 class="about__section-title section-title">О нас</h2>
-                <div class="about__container"></div>
+                <div class="about__container">
+                    <h1>Проект «Millennials»</h1>
+                    <p class="home__about-paragraph">Вдохновлен молодыми идейными людьми, увлеченными творчеством, эмоциями и желанием
+                        сделать мир лучше, проявить себя. У них есть талант и стремление, у нас возможность помочь
+                        им воплотить их мечту в реальность.</p>
+                </div>
             </section>
+            <div class="main__conteiner-img">
+            <img src="img/pic.svg" class="Pic">
+            <img src="img/pic (1).svg" class="Pic1">
+            </div>
 
+            <div class="main__text-block">
+                <h1>Мы предоставляем площади для вашего мероприятия </h1>
+                <p class="main__text-paragraph">И оказываем помощь с организацией, если вам это нужно.
+Наша цель: вовлечь в культурную жизнь города как можно больше людей, помочь молодым ребятам сделать первые шаги к своей мечте и рассказать всем о том, что их волнует.</p>
+            </div>
+            <div class="main__about-text">
+            <img src="img/pic (2).svg" class="pic2">
+            <p class="main__about-paragraph">И оказываем помощь с организацией, если вам это нужно.
+Наша цель: вовлечь в культурную жизнь города как можно больше людей, помочь молодым ребятам сделать первые шаги к своей мечте и рассказать всем о том, что их волнует.</p>
+            </div>
             <section class="upcoming home__upcoming">
                 <h2 class="upccoming__section-title section-title">Мероприятия</h2>
-                <div class="upcoming__container"></div>
+                <div class="upcoming__container">
+                    <div class="posters upcoming__container-nirvana"><img src="img/Nirvana.svg" alt="#">
+                    <div class="Poster__description">
+                        <h2>Собираемся и слушаем альбом Nirvana. Nirvana</h2>
+                        <p class="posters__paragraph">Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
+                        <p class="date__description">07.12.2024 | начало 18.00</p>
+                    </div>
+                    </div>
+                    <div class="posters upcoming__container-stuff"><img src="img/concert-poster.svg" alt="#">
+                    <div class="Poster__description">
+                        <h2>Есть тема, нужно обсудить с HowStuffWorks</h2>
+                        <p class="posters__paragraph">Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.</p>
+                        <p class="date__description">14.12.2024 | начало 18.30</p>
+                    </div>
+                    </div>
+                    <div class="posters upcoming__container-TheBestOfSade"><img src="img/sade-best-of-cover.svg" alt="#">
+                    <div class="Poster__description Posters__TheBestOfSade-red">
+                        <h2>Вечер | The Best of Sade</h2>
+                        <p class="posters__paragraph">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза,
+ритм-блюза и фанка.</p>
+                        <p class="date__description">16.12.2024 | начало 20.00</p>
+                    </div>
+                    </div>
+                </div>
             </section>
 
             <section class="listing home__listing">
                 <h2 class="listing__section-title section-title">Блог</h2>
-                <div class=""></div>
+                <div class="listing__card-news">
+                    <div class="card-news_1">
+                        <img src="img/News.svg" alt="News" class="card-news">
+                        <div class="text__block-listing">
+                            <p class="text__block-date">26.11.2024</p>
+                            <h2>Фотосессия в стенах Театра драмы</h2>
+                            <p>Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было </p>
+                        </div>
+                    </div>
+                    <div class="card-news_2">
+                        <img src="img/exhibition.svg" alt="VR" class="card-news">
+                        <div class="text__block-listing">
+                            <p class="text__block-date">05.11.2024</p>
+                            <h2>Выставка VR в Томске</h2>
+                            <p>Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске. </p>
+                        </div>
+                    </div>
+                    <div class="card-news_3">
+                        <img src="img/news2.svg" alt="News" class="card-news">
+                        <div class="text__block-listing">
+                            <p class="text__block-date">01.11.2024</p>
+                            <h2>Rocking radio в заброшенном ангаре</h2>
+                            <p>15 электрогенераторов, километры проводов и пару тонн света. Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска. </p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section class="contacts home__contacts">
                 <h2 class="contacts__section-title section-title">Контакты</h2>
-                <div class="contacts__container"></div>
+                <div class="contacts__container">
+                    <div class="contacts__elemnts">
+                        <div class="contacts__elemnts_1">
+                            <img src="img/location.svg" alt="Location">
+                            <div class="contacts__text-block">
+                                <h3>Томск, Красноармейская 146</h3>
+                                <p>2 этаж</p>
+                                <p>оф. 206</p>
+                            </div>
+                        </div>
+                        <div class="contacts__elemnts_2">
+                            <img src="img/home.svg" alt="Home">
+                            <div class="contacts__text-block">
+                                <h3>Отдел аренды </h3>
+                                <p>8 (3822) 90-72-56</p>
+                                <p>idat@tusur.ru</p>
+                            </div>
+                        </div>
+                        <div class="contacts__elemnts_3">
+                            <img src="img/star.svg" alt="Star">
+                            <div class="contacts__text-block">
+                                <h3>Отдел мероприятий </h3>
+                                <p>8 (3822) 90-72-56</p>
+                                <p>idat@tusur.ru</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/karts.svg" alt="Karts">
+                </div>
             </section>
 
-            <div class="doit"></div>
+            <div class="doit">
+                <!--<img src="img/text.svg">-->
+            </div>
         </div>
-
+        </div>
     </main>
     
     <footer class="page-footer">
+        <div class="page-footer__link">
+            <a>Календарь мероприятий</a>
+            <a>Провести мероприятие</a>
+            <a>Стать арендатором</a>
+            <a>Наши проекты</a>
+            <a>Контакты</a>
+        </div>
+        <p>© Millennials 2025</p>
+        <div class="Rama">
+            <p>Политика конфиденциальности</p>
+            <p>Cookies</p>
+        </div>
+        <div class="form">
+            <p>Подпишись и будь в курсе происходящего</p>
+            <form></form>
+        </div>
+        <div class="text">
+            <p>Создание и продвижение</p>
+            <img src="img/logo (1).svg">
+        </div>
 
     </footer>
     

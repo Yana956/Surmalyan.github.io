@@ -1,77 +1,251 @@
-.page-header{
+html, body{
+    background-color: rgba(222, 222, 222, 1);
+    background-image:url('noise.jpg');
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1920px;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.body{
+
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex: 1 0 auto;
+    margin-top: 0px;
+    padding-top: 147px;
+}
+.page-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 147px;
     background-color: rgba(222, 222, 222, 0.5);
+    z-index: 1000;
+    margin-bottom: 100.5px;
 }
 .page-header__logo{
-    margin-left: 293px;
-    margin-right: 237px;
+    width: 202px;
+    height: 147px;
+    font-size: 0px;
+    text-decoration: none;
 }
 .page-header__nav{
     display: flex;
-    justify-content: center;
     gap: 50px;
-    margin-right: 307px;
-    margin-top: 0;
-    height: auto;
 }
 .page-header__nav-link{
-    font-size: 18px;
-    color: black;
+    color: #1f1e1e;
+    font-weight: 600;
+    font-size: 1.38;
+    line-height: 25px;
     text-decoration: none;
+    transition: color 0.2s;
 }
 
-.page-header__user-link{
-    text-align: center;
-    padding-left: 40px;
-    padding-bottom: 15px;
-    padding-right: 40px;
-    padding-top: 15px;
+.page-header__container{
     box-sizing: border-box;
-    font-size: 16px;
-    width: 131px;
-    height: 52px;
-    border: 1px solid rgba(31, 30, 30, 1);
-    text-decoration: none;
-    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1414px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
 }
-
-.main-header__paragraph{
-    text-align: center;
+.page-header__logo-icon{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.page-header__right-block{
+    width: 202px;
 }
 .main-header{
+    text-align: center;
     margin-bottom: 100px;
 }
-h1{
-    color: rgba(31, 30, 30, 1);
-    text-align: center;
+
+.main-header h1{
+    display: block;
+    margin-bottom: 70.5px;
+}
+.main-header__svg{
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 70px;
+}
+.offers__container{
+    max-width: 1334px;
+    margin: 0 auto;
+}
+.section-title{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 8px 45px;
+  display: block;
+  margin: 0px auto 150px;
+  max-width: 624px;
 }
 
 .offers{
     text-align: center;
-    padding: 80px 40px;
+    margin-bottom: 200px;
 
 }
-.offers__title{
-    text-align: center;
-    margin-bottom: 46px;
-}
-.offers__btns{
+
+.about__container{
     display: flex;
     justify-content: center;
-    gap: 106px;
+    flex-direction: column;
 }
-.btn--red{
-background-color: red;
-color: white;
-border: none;
+
+.about__container h1{
+    margin-top: 0;
+    margin-bottom: 0;
+
 }
-.btn{
-    background-color: white;
-    text-align: center;
-    color: black;
+.home__about-paragraph{
+    margin-top: 50.5px;
+    margin-left: 467px;
+    width: 867px;
+    height: 74px;
+}
+.main__conteiner-img{
+    height: 866px;
+    display: flex;
+    flex-direction: row;
+}
+.Pic{
+    width: 870px;
+    height: 577px;
+    object-fit: cover;
+    margin-top: 100.5px;
+    margin-bottom: 0px;
     
+}
+.Pic1{
+    width: 406px;
+    height: 493px;
+    margin-top: 388px;
+    margin-left: 58px;
+    margin-bottom: 0px;
+}
+.main__text-block{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.main__text-paragraph{
+    margin-left: 387px;
+}
+.pic2{
+    margin-top: 74px;
+    margin-bottom: 210px;
+}
+.main__about-text{
+    display: flex;
+    flex-direction: row;
+}
+.main__about-paragraph{
+    margin-top: 229px;
+    margin-left: 62px;
+}
+.upcoming{
+    margin-bottom: 54px;
+    padding-top: 110px;
+    width: 100%;
+    height: 1236px;
+    background-image: url('Rectangle\ 244.jpg');
+}
+.upcoming__container{
+    display: flex;
+    justify-content: center;
+    gap: 58px;
+}
+.posters{
+    width: 406px;
+    height: 434px;
+}
+.Poster__description h2{
+    margin-bottom: 0px;
+}
+.posters__paragraph{
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.date__description{
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.Posters__TheBestOfSade-red h2{
+    color: rgba(165, 21, 5, 1);
+}
+.listing{
+    margin-bottom: 200px;
+}
+.listing__section-title{
+    margin-bottom: 150px;
+}
+.listing__card-news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 120px;
+}
+.card-news_1,
+.card-news_2,
+.card-news_3 {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+.text__block-listing{
+    display: flex;
+    flex-direction: column;
+}
+.text__block-date{
+    margin-bottom: 70px;
+}
+.text__block-listing h2{
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+.text__block-listing p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.contacts__section-title{
+    margin-bottom: 150px;
+}
+.contacts__container{
+    display: flex;
+    justify-content: space-between;
+}
+.contacts__elemnts_1,
+.contacts__elemnts_2,
+.contacts__elemnts_3{
+    display: flex;
+    align-items: flex-start;
+    gap: 54px;
+}
+.doit{
+    width: 2161px;
+}
+.page-footer{
+    width: 1337px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: auto;
+    padding: 60px 0 40px 0;
 }

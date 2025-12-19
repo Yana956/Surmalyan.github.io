@@ -12,9 +12,8 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  padding-top: 147px;
   background-color: #dedede;
-  background-image: url(../asstes/images/noise.png);
+  background-image: url(../assets/images/noise.png);
   background-position: 0 0, 0 0;
   background-size: auto, 100% auto;
   background-repeat: repeat, repeat-y;
@@ -189,16 +188,16 @@ img {
   text-transform: uppercase;
 }
 .page-header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   height: 147px;
-  background-color: rgba(222, 222, 222, 0.5);
+  background-color: rgba(222, 0, 0, 0.5);
   backdrop-filter: blur(20px);
-  z-index: 1000;
+  max-width: 1414px;
 }
-.page-header_container {
+.page-header__container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -211,27 +210,25 @@ img {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 1414px;
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
 }
-.page-header_logo {
+.page-header__logo {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 202px;
-  height: 147px;
   font-size: 0px;
   text-decoration: none;
 }
-.page-header_nav {
+.page-header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
 }
-.page-header_nav-link {
-  color: #1f1e1e;
+.page-header__nav-link {
+  color: #1f1f1f;
   font-weight: 600;
   font-size: 1.38;
   line-height: 25px;
@@ -239,16 +236,16 @@ img {
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
-.page-header_nav-link:hover {
+.page-header__nav-link:hover {
   color: #a51505;
 }
-.page-header_logo-icon {
+.page-header__logo-icon {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.page-header_right-block {
+.page-header__right-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,7 +257,7 @@ img {
           align-items: center;
   width: 202px;
 }
-.about_container {
+.about__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,7 +269,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.about_container h1 {
+.about__container h1 {
   margin-top: 0;
   margin-bottom: 0;
 }

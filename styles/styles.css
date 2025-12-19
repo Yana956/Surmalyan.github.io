@@ -1,0 +1,101 @@
+
+.offers__container{
+    max-width: 1334px;
+    margin: 0 auto;
+}
+
+
+.evets{
+    padding: 140px 0px 150px;
+}
+.offers{
+    text-align: center;
+    margin-bottom: 200px;
+
+}
+.offers_btn{
+    display: inline-flex;
+    box-sizing: border-box;
+}
+
+
+.Pic{
+    width: 870px;
+    height: 577px;
+    object-fit: cover;
+    margin-top: 100.5px;
+    margin-bottom: 0px;
+    
+}
+.Pic1{
+    width: 406px;
+    height: 493px;
+    margin-top: 388px;
+    margin-left: 58px;
+    margin-bottom: 0px;
+}
+
+
+.pic2{
+    margin-top: 74px;
+    margin-bottom: 210px;
+}
+
+
+.upcoming{
+    margin-bottom: 54px;
+    padding-top: 110px;
+    width: 100%;
+    height: 1236px;
+    background-image: url('Rectangle\ 244.jpg');
+}
+.upcoming__container{
+    display: flex;
+    justify-content: center;
+    gap: 58px;
+}
+.posters{
+    width: 406px;
+    height: 434px;
+}
+.Poster__description h2{
+    margin-bottom: 0px;
+}
+.posters__paragraph{
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.date__description{
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.Posters__TheBestOfSade-red h2{
+    color: rgba(165, 21, 5, 1);
+}
+.card-news_1,
+.card-news_2,
+.card-news_3 {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+
+.contacts__section-title{
+    margin-bottom: 150px;
+}
+.contacts__container{
+    display: flex;
+    justify-content: space-between;
+}
+.contacts__elemnts-1,
+.contacts__elemnts-2,
+.contacts__elemnts-3{
+    display: flex;
+    align-items: flex-start;
+    gap: 54px;
+}
+.doit{
+    width: 2161px;
+}
+

@@ -3,6 +3,7 @@ import {deleteSync} from "del";
 
 import include from "gulp-file-include";
 import formatHtml from "gulp-format-html";
+import gulpNunjucksTemplates from "gulp-nunjucks-templates";
 
 import less from "gulp-less";
 import plumber from "gulp-plumber";
@@ -34,6 +35,8 @@ const resources = {
         "src/assets/favicons/**/*.*",
         "src/assets/fonts/**/*.{woff,woff2}",
         "src/assets/icons/**/*.*",
+        "src/assets/logo/**/*.*",
+        "src/assets/bacground/**/*.*",
         //"src/assets/video/**/*.{mp4,webm}",
         //"src/assets/audio/**/*.{mp3,ogg,wav,aac}",
         //"src/json/**/*.json",
@@ -53,6 +56,9 @@ function includeHtml(){
         .pipe(include({
             prefix: "@@",
             basepath: "@file"
+        }))
+        .pipe(gulpNunjucksTemplates({
+            data: {assets:"/assets"}
         })
     )
     .pipe(formatHtml())
@@ -174,6 +180,7 @@ const build =
         gulp.watch(resources.static, {delay: 500 }, gulp.series(copy,reloadServer));
         gulp.watch(resources.images,{delay: 500},gulp.series(images, reloadServer));
         gulp.watch(resources.svgSprite, gulp.series(svgSprite, reloadServer));
+        gulp.watch("src/assets/logo/**/*.*", {delay: 500}, gulp.series(copy, reloadServer));
     }
 
     const start = gulp.series(build,serve);

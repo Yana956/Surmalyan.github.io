@@ -12,8 +12,8 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  background-color: #dedede;
-  background-image: url(../assets/images/noise.png);
+  background-image: url("/src/assets/bacground/noise.jpg");
+  background-color: #ffffff;
   background-position: 0 0, 0 0;
   background-size: auto, 100% auto;
   background-repeat: repeat, repeat-y;
@@ -58,6 +58,11 @@ img {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.page-container {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 200px;
 }
 @font-face {
   font-family: "mak";
@@ -193,9 +198,8 @@ img {
   left: 0;
   width: 100%;
   height: 147px;
-  background-color: rgba(222, 0, 0, 0.5);
+  background-color: rgba(222, 222, 222, 0.5);
   backdrop-filter: blur(20px);
-  max-width: 1414px;
 }
 .page-header__container {
   -webkit-box-sizing: border-box;
@@ -218,6 +222,7 @@ img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 202px;
+  height: 147px;
   font-size: 0px;
   text-decoration: none;
 }
@@ -261,23 +266,36 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-.about__container h1 {
-  margin-top: 0;
-  margin-bottom: 0;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .about-paragraph {
-  margin-top: 50.5px;
-  margin-left: 467px;
-  width: 867px;
-  height: 74px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 0;
+}
+.about-title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin: 0;
+}
+.about__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.about__pic1 {
+  margin-top: 20px;
 }
 .listing {
   -webkit-box-sizing: border-box;
@@ -345,6 +363,188 @@ img {
 .text__block-listing p {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.offers__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  max-width: 624px;
+  margin-bottom: 200px;
+}
+.offers__title {
+  margin: 0;
+  margin-bottom: 46px;
+}
+.offers__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 106px;
+}
+.offers__btn:hover {
+  background-color: #bc3324;
+  border: none;
+}
+.upcoming {
+  margin-bottom: 54px;
+  padding-top: 110px;
+  width: 100%;
+  height: 1236px;
+}
+.upcoming__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 58px;
+  width: 100%;
+}
+.home {
+  padding: 100px 0;
+}
+.home__listing {
+  margin-bottom: 95px;
+}
+.article-card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.article-card:hover .article-card__picture {
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(31, 31, 30, 0.55);
+          box-shadow: 0px 0px 30px 0px rgba(31, 31, 30, 0.55);
+}
+.article-card + .article-card {
+  margin-top: 120px;
+}
+.article-card + .article-card::before {
+  content: '';
+  display: block;
+  position: absolute;
+  margin: 0 auto 60px;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  max-width: 1255px;
+  width: 100%;
+  height: 1px;
+  background-color: #1f1e1e;
+  pointer-events: none;
+}
+.article-card__link {
+  margin-right: 60px;
+  display: block;
+  width: 467px;
+  text-decoration: none;
+  font-size: 0;
+}
+.article-card__link:hover ~ .article-card__info .article-card__title-link {
+  color: #bc3324;
+  text-decoration-color: #bc3324;
+}
+.article-card__picture {
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+.article-card__picture::after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 62.715%;
+}
+.article-card__img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.article-card__info {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 150px;
+}
+.article-card__time {
+  margin: 0 0 40px;
+  color: #1f1e1e;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+.article-card__title-link,
+.article-card__description {
+  max-width: 470px;
+}
+.article-card__title-link {
+  margin: auto 0 40px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #1f1e1e;
+  text-decoration-color: transparent;
+  -webkit-transition: color 0.2s, text-decoration-color 0.2s;
+  transition: color 0.2s, text-decoration-color 0.2s;
+}
+.article-card__title-link:hover {
+  color: #bc3324;
+  text-decoration-color: #bc3324;
+}
+.article-card__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+}
+.article-card__description {
+  margin: 0;
+}
+.article-card__arow {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
 }
 .event {
   padding: 40px 0 150px;

@@ -1,24 +1,7 @@
 
-.offers__container{
-    max-width: 1334px;
-    margin: 0 auto;
-}
-
-
 .evets{
     padding: 140px 0px 150px;
 }
-.offers{
-    text-align: center;
-    margin-bottom: 200px;
-
-}
-.offers_btn{
-    display: inline-flex;
-    box-sizing: border-box;
-}
-
-
 .Pic{
     width: 870px;
     height: 577px;
@@ -42,18 +25,6 @@
 }
 
 
-.upcoming{
-    margin-bottom: 54px;
-    padding-top: 110px;
-    width: 100%;
-    height: 1236px;
-    background-image: url('Rectangle\ 244.jpg');
-}
-.upcoming__container{
-    display: flex;
-    justify-content: center;
-    gap: 58px;
-}
 .posters{
     width: 406px;
     height: 434px;

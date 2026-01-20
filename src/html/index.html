@@ -9,34 +9,35 @@
         <div class="home">
             <header class="main-header home-main__header">
                 <h1>АРТ-ПРОСТРАНСТВО</h1>
-                <img src="{{ assets }}/logo/logo.svg" class="main-header__svg" alt="Lenni">
+                <img src="{{ assets }}/images/LENNI.jpg" class="main-header__svg" alt="Lenni">
                 <p class="main-header__paragraph">для людей горящих сердцЕМ и делом
                 место для настоящего
                 </p>
             </header>
 
             <div class="offers__container">
-            <section class="offers home__offers">
                 <h4 class="offers__title">Я хочу:</h4>
                 <div class="offers__btns">
                     <button class="offers__btn btn" type="button">Провести Мероприятие</button>
                     <button class="offers__btn btn" type="button">Стать арендатором</button>
                 </div>
-            </section>
 
+            <div class="page-container">
             <section class="about home__about">
                 <h2 class="about__section-title section-title">О нас</h2>
                 <div class="about__container">
-                    <h1>Проект «Millennials»</h1>
+                    <h1 class="about-title">Проект «Millennials»</h1>
                     <p class="about-paragraph">Вдохновлен молодыми идейными людьми, увлеченными творчеством, эмоциями и желанием
                         сделать мир лучше, проявить себя. У них есть талант и стремление, у нас возможность помочь
                         им воплотить их мечту в реальность.</p>
                 </div>
+
+                <div class="about__img main__conteiner-img">
+                    <img src="{{ assets }}/images/concert.jpg" class="Pic about__pic">
+                    <img src="{{ assets }}/images/human.jpg" class="Pic1 about__pic1">
+                </div>
             </section>
-            <div class="main__conteiner-img">
-            <img src="{{ assets }}/images/concert.jpg" class="Pic">
-            <img src="{{ assets }}/images/human.jpg" class="Pic1">
-            </div>
+    
 
             <div class="main__text-block">
                 <h1>Мы предоставляем площади для вашего мероприятия </h1>
@@ -76,36 +77,7 @@
                 </div>
             </section>
 
-            <section class="listing home__listing">
-                <h2 class="listing__section-title section-title">Блог</h2>
-                <div class="listing__card-news">
-                    <div class="card-news_1">
-                        <img src="{{ assets }}/images/News1.jpg" alt="News" class="card-news">
-                        <div class="text__block-listing">
-                            <p class="text__block-date">26.11.2024</p>
-                            <h2>Фотосессия в стенах Театра драмы</h2>
-                            <p>Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было </p>
-                        </div>
-                    </div>
-                    <div class="card-news_2">
-                        <img src="{{ assets }}/images/News2.jpg" alt="VR" class="card-news">
-                        <div class="text__block-listing">
-                            <p class="text__block-date">05.11.2024</p>
-                            <h2>Выставка VR в Томске</h2>
-                            <p>Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске. </p>
-                        </div>
-                    </div>
-                    <div class="card-news_3">
-                        <img src="{{ assets }}/images/News3.jpg" alt="News" class="card-news">
-                        <div class="text__block-listing">
-                            <p class="text__block-date">01.11.2024</p>
-                            <h2>Rocking radio в заброшенном ангаре</h2>
-                            <p>15 электрогенераторов, километры проводов и пару тонн света. Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска. </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+            
             <section class="contacts home__contacts">
                 <h2 class="contacts__section-title section-title">Контакты</h2>
                 <div class="contacts__container">
@@ -136,7 +108,7 @@
                         </div>
                     </div>
                     <img src="{{ assets }}/images/karts.jpg" alt="Karts">
-                </div>
+                
             </section>
 
             <div class="doit">
@@ -144,6 +116,9 @@
             </div>
         </div>
         </div>
+
+    </div>
+    @@include('blocks/blog-listing.html', {"class":"home__listing"})
     </main>
     
    @@include('blocks/page-footer.html')

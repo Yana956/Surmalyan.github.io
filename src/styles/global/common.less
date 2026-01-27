@@ -50,3 +50,31 @@ img{
     padding: 0;
     padding-top: 200px;
 }
+
+input,
+textarea,
+select{
+    box-shadow: none;
+    outline: none;
+    color: @black;
+    font-family: @font1;
+
+    color: #6c6c6c;
+
+}
+input,
+textarea{
+    &::placeholder{
+        color: #6c6c6c;
+    }
+}
+input:focus,
+textarea:focus{
+    &::placeholder{
+        color: transparent;
+    }
+}
+textarea{
+    resize: none;
+
+}

@@ -1,110 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <title>Lenni</title>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
-    <style>
-    .container {
-        margin-top: 147px;
-        display: grid;
-        place-items: center; 
-        min-height: 100vh; 
-    }
-    .main-title, .hero-image {
-        margin-top: 0;
-    }
+    <link rel="stylesheet" href="styles/styles.css">  
     
-    .hero-image {
-    grid-area: 2 / 1; 
-    text-align: center;
-    }
-    .main-title {
-    grid-area: 1 / 1; 
-    text-align: center;
-    }
-    .table-visualization {
-    text-align: right; 
-    }
-
-</style>
   </head>
 
   <body class="body">
     <header class="page-header">
-        <div class="page-header__container">
-            <a class="page-header__logo" href="#"><img src="img/logo.svg" class="page-header__logo-icon" alt="Логотип"></a>
-
-            <nav class="page-header__nav">
-                <a class="page-header__nav-link" href="#">Мероприятия</a>
-                <a class="page-header__nav-link" href="#">Блог</a>
-                <a class="page-header__nav-link" href="#">О нас</a>
-                <a class="page-header__nav-link" href="#">Контакты</a>
-            </nav>
-            <div class="page-header__right-block">
-                <a class="page-header__user-link btn" href="#">Войти</a>
-            </div>
+      @@include('blocks/page-header.html')
     </header>
             
-<main class="container">
-        <h1 class="main-title">Вечер | The Best of Sade</h1>
-        <div class="hero-image">
-            <img src="img/woomen.svg" alt="Woomen">
+    <main class="main">
+
+        <h1 class="main-title event__title">Вечер | The Best of Sade</h1>
+        <div class="hero-image event__img">
+        <img class="event__images" src="{{ assets }}/images/women.jpg" alt="Woomen"> 
         </div>
-        <section class="program-section">
-            <h2 class="section-title.">Программа мероприятий</h2>
-        </section>
 
-        <section class="artist-info">
-            <div>
-                <h3 class="artist-title.">The Best of Sade</h3>
-                <p></p>
-                <p></p>
-            </div>
-        </section>
-        <section class="booking-section">
-            <h2 class="section-title.">Забронировать столик</h2>
-            <div class="booking-grid">
-                <div>
-                    <h3>Выберите столик:</h3>
-                    <div class="tables-grid">
-                        <div class="table-item" data-table="1">Стол 1</div>
-                        <div class="table-item" data-table="2">Стол 2</div>
-                        <div class="table-item" data-table="3">Стол 3</div>
-                        <div class="table-item" data-table="4">Стол 4</div>
-                        <div class="table-item" data-table="5">Стол 5</div>
-                        <div class="table-item" data-table="6">Стол 6</div>
-                        <div class="table-item" data-table="7">Стол 7</div>
-                        <div class="table-item" data-table="8">Стол 8</div>
-                    </div>
-                    
-                </div>
-                
-                <div class="table-visualization">
-                    <img src="img/karts (2).svg" alt="Схема расположения столов">
-                </div>
-            </div>
-        </section>
+     
+        <article class="event">
+            <div class="event__content content">
+                <h5>Программа мероприятия</h5>
 
-        <section class="tickets-section">
-            <h2 class="section-title">Ваши пригласительные билеты</h2>
-            <div class="tickets-grid"></div>
-                <div class="ticket-summary">
-                    <h3>Сумма</h3>
-                    <div class="total-amount">2500 руб.</div>
-                    <button class="btn">Купить билеты</button>
-                </div>
+                <ul>
+                    <li>20:15 — Приветствие гостей</li>
+                    <li>20:30 — Первая подача блюд | Салаты</li>
+                    <li>20:40 — Живой вокал | Композиции 1-3</li>
+                    <li>21:20 — Подача горячих блюд</li>
+                    <li>21:30 — Живой вокал | Композиции 4-7</li>
+                    <li>22:15 — Подача десерта</li>
+                    <li>22:30 — Живой вокал | Композиции 8-9</li>
+                    <li>23:00 — Завершение вечера</li>
+                </ul>
+                <h5>The Best of Sade</h5>
+                <p>Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков, включая самые популярные хиты группы, раритеты и их любимые треки. </p>
+                <p>Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры.
+                    Она лидировала музыкальных чартах с 1994 по 1995 год, став четырехкратно платиновой в США и продав более 2 миллионов копий в Европе.</p>
+
+                <ol>
+                    <li>Your Love Is King</li>
+                    <li>Hang On To Your Love</li>
+                    <li>Smooth Operator</li>
+                    <li>Jezebel</li>
+                    <li>The Sweetest Taboo</li>
+                    <li>Is It A Crime</li>
+                    <li>Never As Good As The First Time</li>
+                    <li>Love Is Stronger Than Pride</li>
+                    <li>Paradise</li>
+                </ol>
             </div>
-        </section>
+
+            <form class="reserve event__reserve">
+                <div class="reserve__checks">Чекбоксы</div>
+                <div class="reserve__scheme">Схема столов</div>
+                <div class="reserve__order">Оформление заказа</div>
+                <div class="reserve__legend">Легенда</div>
+            </form>
+        </article>
+     
+      
+      <section class="table-section">
+        <h2 class="table__title ">Забронировать столик</h2> 
+        <div class="radio booking__radio">
+
+              <div class="table-item" data-table="1">Стол 1</div>
+              <div class="table-item" data-table="2">Стол 2</div>
+              <div class="table-item" data-table="3">Стол 3</div>
+              <div class="table-item" data-table="4">Стол 4</div>
+              <div class="table-item" data-table="5">Стол 5</div>
+              <div class="table-item" data-table="6">Стол 6</div>
+              <div class="table-item" data-table="7">Стол 7</div>
+              <div class="table-item" data-table="8">Стол 8</div>
+        </div>
+          
+          
+          <div class="table-visualization">
+            <img src="{{ assets }}/images/kart.jpg" alt="Схема расположения столов"> 
+          </div>
+        </div>
+      </section>
+
+      <section class="tickets-section">
+        <h2 class="section-title">Ваши пригласительные билеты</h2>
+        <div class="tickets-grid">
+          <div class="ticket-summary">
+            <h3>Сумма</h3>
+            <div class="total-amount">2500 руб.</div>
+            <button class="btn">Купить билеты</button>
+          </div>
+        </div>
+      </section>
     </main>
-            
-        </div>
-
-
-@@include('blocks/page-footer.html')
     
-</body>
+    <footer class="page-footer">
+      @@include('blocks/page-footer.html')
+    </footer>
+  </body>
 </html>

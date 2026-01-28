@@ -593,7 +593,7 @@ textarea {
           transform: rotate(45deg);
 }
 .x-btn {
-  position: fixed;
+  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -608,6 +608,8 @@ textarea {
   padding: 0;
   width: 60px;
   height: 60px;
+  margin-top: -30px;
+  margin-right: -30px;
   border-radius: 50%;
   background-color: #1f1e1e;
   color: #ffffff;
@@ -1140,7 +1142,7 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 58px;
+  gap: 24px;
   width: 100%;
 }
 .home {
@@ -1373,8 +1375,8 @@ textarea {
 }
 .pp__x-btn {
   position: fixed;
-  top: -20px;
-  right: -20px;
+  top: 20px;
+  right: 20px;
 }
 .pp__container {
   -webkit-box-sizing: border-box;
@@ -1386,7 +1388,8 @@ textarea {
 }
 .pp__title {
   position: relative;
-  margin: -40px 0 70px;
+  margin-top: calc((2rem*1.36 + 10px)*-1);
+  margin-bottom: 30px;
   padding: 10px 85px;
   max-width: 595px;
   width: 100%;

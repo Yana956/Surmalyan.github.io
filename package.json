@@ -5,13 +5,13 @@
   "author": "hello@dignity.codes",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "baseline-browser-mapping": "^2.9.19",
     "browser-sync": "^3.0.4",
     "del": "^8.0.1",
     "gulp": "^5.0.1",
     "gulp-csso": "^4.0.1",
     "gulp-file-include": "^2.3.0",
     "gulp-format-html": "^3.2.0",
-    "gulp-imagemin": "^9.1.0",
     "gulp-less": "^5.0.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^10.0.0",
@@ -31,6 +31,7 @@
     "start": "gulp start"
   },
   "dependencies": {
+    "gulp-imagemin": "^9.2.0",
     "gulp-nunjucks-templates": "^1.0.9"
   }
 }

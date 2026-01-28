@@ -832,6 +832,7 @@ textarea {
 }
 .page-header {
   position: sticky;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
@@ -1127,7 +1128,6 @@ textarea {
 .upcoming {
   margin-bottom: 54px;
   padding-top: 110px;
-  width: 100%;
   height: 1236px;
 }
 .upcoming__container {

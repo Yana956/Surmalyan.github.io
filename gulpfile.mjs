@@ -26,13 +26,13 @@ import server from "browser-sync";
 
 const resources = {
     html: "src/html/**/*.html",
-    jsDev: "src/scripts/dev/**/*.js",
+    jsDev: "src/scripts/**/*.js",
     jsVendor: "src/scripts/vendor/**/*.js",
     images: "src/assets/images/**/*.{png,jpg,jpeg,webp,gif,svg}",
     less: "src/styles/**/*.less",
     svgSprite: "src/assets/svgSprite/*.svg",
     static:[
-        "src/assets/favicons/**/*.*",
+        //"src/assets/favicons/**/*.*",
         "src/assets/fonts/**/*.{woff,woff2}",
         "src/assets/icons/**/*.*",
         "src/assets/logo/**/*.*",
@@ -84,7 +84,7 @@ function style (){
 
 function js(){
     return gulp
-    .src("src/scripts/dev/*.js")
+    .src("src/scripts/**/*.js")
     .pipe(plumber())
     .pipe(
         include({

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
   <title>Lenni</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,9 +27,23 @@
         <a class="page-header__nav-link" href="#">Блог</a>
         <a class="page-header__nav-link" href="#">О нас</a>
         <a class="page-header__nav-link" href="#">Контакты</a>
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">Александр С.</a>
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__logo-icon">
+              <use href="/assets/icons/logout.svg"></use>
+            </svg>
+          </a>
+        </div>
       </nav>
       <div class="page-header__right-block">
-        <a class="page-header__user-link btn" href="#">Войти</a>
+        <a class="page-header__user-link page-header__btn" href="#">Войти
+          <svg class="page-header__user-icon" width="24" height="24">
+            <use href="/assets/svgSprite/user.svg"></use>
+
+          </svg>
+        </a>
+        <button type="button" class="page-header__nav-toggle"></button>
       </div>
 
 
@@ -112,9 +127,15 @@
           <thead class="table__head">
             <tr class="table__head-tr">
               <th class="table__th"></th>
-              <th class="table__th">Тариф «Light»</th>
-              <th class="table__th">Тариф «Promo»</th>
-              <th class="table__th">Тариф «All stars»</th>
+              <th class="table__th">Тариф
+                <br /> «Light»
+              </th>
+              <th class="table__th">Тариф
+                <br /> «Promo»
+              </th>
+              <th class="table__th">Тариф
+                <br /> «All stars»
+              </th>
             </tr>
           </thead>
           <tbody class="table__body">
@@ -207,14 +228,20 @@
             </tr>
 
           </tbody>
-          <!--<tfoot class="table__footer">
-        <tr class="table__footer-tr">
-            <th class="table__footer-th"></th>
-            <th class="table__footer-th">Тариф «Light»</th>
-            <th class="table__footer-th">Тариф «Promo»</th>
-            <th class="table__footer-th">Тариф «All stars»</th>
-        </tr>
-    </tfoot>-->
+          <tfoot class="table__footer">
+            <tr class="table__footer-tr">
+              <th class="table__footer-th"></th>
+              <th class="table__footer-th">Тариф
+                <br /> «Light»
+              </th>
+              <th class="table__footer-th">Тариф
+                <br /> «Promo»
+              </th>
+              <th class="table__footer-th">Тариф
+                <br /> «All stars»
+              </th>
+            </tr>
+          </tfoot>
         </table>
       </section>
     </div>
@@ -248,9 +275,9 @@
   <div class="pp" id="eventPP">
     <div class="pp__wraper">
       <div class="pp__sticky-close">
-        <button type="button" class="pp__x-btn x-btn">
-          <svg class="x-btn__icon" width="12" height="12">
-            <use href="/assets/svg-sprite/fi_x.svg"></use>
+        <button class="x-btn">
+          <svg class="x-btn__icon" width="24" height="24">
+            <use href="/assets/images/x.svg"></use>
           </svg>
         </button>
       </div>
@@ -260,16 +287,42 @@
         </h2>
         <form class="pp__form form">
 
+
           <div class="form__list">
+
             <div class="field form__field form__field--w50">
               <h5 class="field__title">Формат мероприятия:</h5>
-            </div>
-            <div class="form__group form__group--w50">
 
+              <div class="radio field__radio">
+                <label class="radio__item">
+                  <input class="radio__input" type="radio" name="format" value="seminar" checked />
+                  <span class="radio__mark"></span>
+                  <span class="radio__label">Мастер-класс/семинар</span>
+                </label>
+
+                <label class="radio__item">
+                  <input class="radio__input" type="radio" name="format" value="concert" />
+                  <span class="radio__mark"></span>
+                  <span class="radio__label">Концерт/выступление</span>
+                </label>
+
+                <label class="radio__item">
+                  <input class="radio__input" type="radio" name="format" value="show" />
+                  <span class="radio__mark"></span>
+                  <span class="radio__label">Выставка/показ</span>
+                </label>
+
+                <label class="radio__item">
+                  <input class="radio__input" type="radio" name="format" value="other" />
+                  <span class="radio__mark"></span>
+                  <span class="radio__label">Другое</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form__group form__group--w50">
               <label class="form__field field">
-                <span class="field__title">
-                  Планируеммое колличество посетителей:
-                </span>
+                <span class="field__title">Планируемое количество посетителей:</span>
                 <select class="field__select" name="amount">
                   <option value="20">до 20 человек</option>
                   <option value="100">от 20 до 100 человек</option>
@@ -279,9 +332,7 @@
               </label>
 
               <div class="field form__field form__field--m0">
-                <h5 class="field__title">
-                  Дата проведения:
-                </h5>
+                <h5 class="field__title">Дата проведения:</h5>
                 <div class="field__date">
                   <div class="field__date-inputs">
                     <input class="field__date-input" type="text" placeholder="ДД" />
@@ -293,41 +344,12 @@
             </div>
           </div>
 
-          <div class="radio field__radio">
-
-            <label class="radio__item">
-              <input class="radio__input" type="radio" name="format" value="seminar" checked />
-              <span class="radio__mark"></span>
-              <span class="radio__label">Мастер-класс/семинар</span>
-            </label>
-
-            <label class="radio__item">
-              <input class="radio__input" type="radio" name="format" value="concert" />
-              <span class="radio__mark"></span>
-              <span class="radio__label">Концерт/выступление</span>
-            </label>
-
-            <label class="radio__item">
-              <input class="radio__input" type="radio" name="format" value="show" />
-              <span class="radio__mark"></span>
-              <span class="radio__label">Выставка/показ</span>
-            </label>
-
-            <label class="radio__item">
-              <input class="radio__input" type="radio" name="format" value="other" />
-              <span class="radio__mark"></span>
-              <span class="radio__label">Другое</span>
-            </label>
-          </div>
-
-
 
 
 
 
           <h5 class="form__title">Контактные данные:</h5>
           <div class="form__list">
-
             <label class="field form__field form__field--w50">
               <span class="field__label">Имя*</span>
               <input class="field__input" type="text" name="name" placeholder="Имя" required>
@@ -347,29 +369,24 @@
               <span class="field__label">Email*</span>
               <input class="field__input" type="email" name="email" placeholder="Email" required>
             </label>
-
           </div>
 
 
           <label class="field form__field">
-            <span class="field__title">
-              Есть пожелания? Напишите нам:
-            </span>
+            <span class="field__title">Есть пожелания? Напишите нам:</span>
             <textarea class="field__textarea" name="Пожелания"></textarea>
           </label>
+
 
           <label class="check form__check">
             <input class="check__input" type="checkbox" name="agree" required checked />
             <span class="check__mark"></span>
             <span class="check__label check__label--fz14">Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных</span>
-
           </label>
 
-          <div class="form__btns">
-            <button class="btn form__submit" type="submit">
-              Отправить
-            </button>
 
+          <div class="form__btns">
+            <button class="btn form__submit" type="submit">Отправить</button>
             <button type="button" class="form__close-btn">Закрыть</button>
           </div>
         </form>

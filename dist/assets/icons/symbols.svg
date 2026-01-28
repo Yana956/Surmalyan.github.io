@@ -2,10 +2,7 @@
         <clipPath id="a">
             <path fill="#FFF" d="M0 19.001h70v24H0z"/>
         </clipPath>
-    </defs><symbol id="fi_x"><g fill="none">
-    <path d="M0 0h24v24H0z"/>
-    <path d="M18 6 6 18M6 6l12 12" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-</g></symbol><symbol id="LENNI"><g fill="none">
+    </defs><symbol id="LENNI"><g fill="none">
     <path d="M485.389 0v317.073h161.956V325H0V0h485.389Zm190.064 325h200.745v-7.927H713.443V159.935h126.765v-7.926H713.443V7.927H876V0H675.453v325ZM941.896 8.393V325h-37.99V0h37.99c16.395 0 56.784 3.73 92.374 35.438 28.79 25.179 47.59 60.15 57.18 108.177V0h37.99v325h-37.99V203.3C1083.46 22.382 976.286 8.393 941.896 8.393ZM1207.45 325V8.393c34.39 0 141.56 13.989 149.56 194.907V325H1395V0h-37.99v143.615c-9.6-48.027-28.4-82.998-57.19-108.177C1264.23 3.73 1223.84 0 1207.45 0h-37.99v325h37.99ZM1435.01 0H1920v325h-484.99V0Z" fill="#1F1E1E" fill-rule="evenodd"/>
 </g></symbol><symbol id="link" viewBox="0 0 92 62.003"><g fill="none">
     
@@ -15,4 +12,6 @@
         <path d="M0 19.001h70v24H0z"/>
         <path d="M5 31.002h60M58 24.002l7 7-7 7" stroke="#1F1E1E" stroke-width="2"/>
     </g>
+</g></symbol><symbol id="user" viewBox="0 0 24 24"><g fill="none">
+    <path d="M13.3 12.22A4.92 4.92 0 0 0 15 8.5a5 5 0 0 0-10 0 4.92 4.92 0 0 0 1.7 3.72A8 8 0 0 0 2 19.5a1 1 0 1 0 2 0 6 6 0 1 1 12 0 1 1 0 0 0 2 0 8 8 0 0 0-4.7-7.28ZM10 11.5a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm11.71-2.37a1 1 0 0 0-1.42 0l-2 2-.62-.63a1.002 1.002 0 0 0-1.71.705 1 1 0 0 0 .29.705l1.34 1.34a1 1 0 0 0 1.41 0l2.67-2.67a1 1 0 0 0 .04-1.45Z" fill="curentColor"/>
 </g></symbol></svg>

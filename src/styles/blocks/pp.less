@@ -7,7 +7,7 @@
     bottom: 0;
     padding: 90px 90px 50px;
     backdrop-filter: blur(50px);
-    background:var(28, 27, 27, 0.4 );
+    background:rgba(28, 27, 27, 0.4 );
     overflow-y: auto;
     z-index: 110;
     display: none;
@@ -29,14 +29,16 @@
         position: sticky;
         top: 0;
         align-self: flex-end;
-        width: 0;
-        height: 0;
+        width: auto;
+        height: auto;
+        z-index: 20;
+        padding: 20px;
 
     }
     &__x-btn{
-        position: absolute;
-        top: -30px;
-        right:-30px;
+        position: fixed;
+        top: -20px;
+        right: -20px;
     }
     &__container{
         box-sizing: border-box;
